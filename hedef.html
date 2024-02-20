@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+  <!-- Simulate a smartphone / tablet -->
+  <div class="mobile-container">
+
+    <!-- Top Navigation Menu -->
+    <div class="topnav">
+      <a href="#home" class="active">Logo</a>
+      <div id="myLinks">
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+    <div style="padding-left:16px">
+      <h3>Vertical Mobile Navbar</h3>
+      <p>This example demonstrates how a navigation menu on a mobile/smart phone could look like.</p>
+      <p>Click on the hamburger menu (three bars) in the top right corner, to toggle the menu.</p>
+    </div>
+
+    <!-- End smartphone / tablet look -->
+  </div>
+
+
+
+  <p>soru hedefimiz
+
+    HTML TARAFI
+    icon a parametresi ekleyip href = # koyabilirdik ama
+    boş linklere tıklayınca sanki link varmış gibi
+    görünümü vermemek için
+    # yerine javascript:void(0); kullandık
+    onlick=tıklayınca buttona foksiyon belirledik.
+
+    JS TARAFI
+
+    foksiyon çağırdık
+    ilk baştan ulaşmak istediğimiz elementi belirlemek için
+    şeçme işlemi yaptık(mylinks id elementı sectk) bunu yaparken değişken ataması yaptık x diye
+    if döngüsü içine ;
+
+    x .style . display === block parametreisini yani button
+    açıksa kapat
+    kapalıysa
+    aç göster dedik.
+
+    onclick foksiyon aktarımı yaptık.
+  </p>
+<hr>
+  <p>
+    <h1>SORU 1</h1>
+    onlick foksiyon ataması yapıldı
+
+    elemeti seçerken seçtigimiz menun ana divive değişken atayım
+    if döngüsüyle şunu çeviriyoruz
+    arkadaş sen açıksan gorunmez ol diyoruz dive
+    kapalıysan açık ol diyoruz dive if döngüsüyle
+
+
+
+  </p>
+  <hr>
+  <p>
+ <h1>Soru 2</h1>
+
+<h3>Html & Css:
+  bu sefer şunu yapardık 2 tane icon belirlerdik 1 tane açmaya 1 tanesinide kapatmak için
+  bunların her 2 sinide media sorgusuyla aktif edip normalde kapatırdık
+  html ve css kısmını bitmiş olurdu.
+</h3>
+ <h3> JS kısmı:
+    burda clas ulaşıcam 2 tane temel vardır 
+    1-menuler
+    2-açılır buton ve kapanır buton bastan bunlara querySelector sekmesıyle ulasırım 
+
+    2 icon tıklayınca ne olucağını belirlemek için click olayı foksiyonu tanırdım 
+
+    2 iconu foksiona bağlardım 
+   - açılır butonda flex yapardım 
+   - kapanır butonda close top değerini -100 yapıp sayfadan uçururdum.
+
+ </h3>
+  </p>
+
+  <hr>
+
+  <h1>SORU3</h1>
+
+  <nav>
+    <div class="logo">LOGO</div>
+    <div class="openMenu"><i class="fa fa-bars"></i></div>
+    <ul class="mainMenu">
+      <li><a href="#">home</a></li>
+      <li><a href="#">Products</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">About</a></li>
+      <div class="closeMenu"><i class="fa fa-times"></i></div>
+    </ul>
+  </nav>
+
+
+
+
+
+
+
+
+
+  <script src="header.js">
+
+  </script>
+
+</body>
+
+</html>
